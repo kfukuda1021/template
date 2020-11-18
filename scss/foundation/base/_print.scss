@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* ***************************
+print
+*************************** */
+@media print {
+
+  .l-header__body,
+  .l-header__body__left {
+    padding: 0;
+  }
+
+  .l-header__body__right,
+  .o-breadCrumb,
+  .l-footer {
+    display: none;
+  }
+
+  .o-slider__item {
+    display: none !important;
+  }
+
+  .o-slider__item:first-child {
+    display: block !important;
+  }
+
+  .slick-track {
+    transform: none !important;
+  }
+
+  .slick-arrow,
+  .slick-dots {
+    display: none !important;
+  }
+}

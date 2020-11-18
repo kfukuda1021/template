@@ -1,0 +1,67 @@
+/* ***************************
+position
+*************************** */
+
+/*
+top
+--------------------------- */
+
+@for $i from 0 through 100 {
+  body .u-pot#{$i * 5} {
+    @if $i==0 {
+      top: ($i * 5) !important;
+    }
+
+    @else {
+      top: ($i * 5) + px !important;
+    }
+  }
+}
+
+/*
+bottom
+--------------------------- */
+
+@for $i from 0 through 100 {
+  body .u-pob#{$i * 5} {
+    @if $i==0 {
+      bottom: ($i * 5) !important;
+    }
+
+    @else {
+      bottom: ($i * 5) + px !important;
+    }
+  }
+}
+
+/*
+right
+--------------------------- */
+
+@for $i from 0 through 100 {
+  body .u-por#{$i * 5} {
+    @if $i==0 {
+      right: ($i * 5) !important;
+    }
+
+    @else {
+      right: ($i * 5) + px !important;
+    }
+  }
+}
+
+/*
+left
+--------------------------- */
+
+@for $i from 0 through 100 {
+  body .u-pol#{$i * 5} {
+    @if $i==0 {
+      left: ($i * 5) !important;
+    }
+
+    @else {
+      left: ($i * 5) + px !important;
+    }
+  }
+}

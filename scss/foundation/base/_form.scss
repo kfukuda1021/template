@@ -1,0 +1,13 @@
+input,
+textarea,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  appearance: none;
+  @include fs(14px, 14px);
+}

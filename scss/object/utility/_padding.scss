@@ -1,0 +1,67 @@
+/* ***************************
+padding
+*************************** */
+
+/*
+padding top
+--------------------------- */
+
+@for $i from 0 through 20 {
+  body .u-pt#{$i * 5} {
+    @if $i==0 {
+      padding-top: ($i * 5);
+    }
+
+    @else {
+      padding-top: ($i * 5) + px;
+    }
+  }
+}
+
+/*
+padding bottom
+--------------------------- */
+
+@for $i from 0 through 20 {
+  body .u-pb#{$i * 5} {
+    @if $i==0 {
+      padding-bottom: ($i * 5);
+    }
+
+    @else {
+      padding-bottom: ($i * 5) + px;
+    }
+  }
+}
+
+/*
+padding right
+--------------------------- */
+
+@for $i from 0 through 20 {
+  body .u-pr#{$i * 5} {
+    @if $i==0 {
+      padding-right: ($i * 5);
+    }
+
+    @else {
+      padding-right: ($i * 5) + px;
+    }
+  }
+}
+
+/*
+padding left
+--------------------------- */
+
+@for $i from 0 through 20 {
+  body .u-pl#{$i * 5} {
+    @if $i==0 {
+      padding-left: ($i * 5);
+    }
+
+    @else {
+      padding-left: ($i * 5) + px;
+    }
+  }
+}

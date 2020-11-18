@@ -1,0 +1,63 @@
+/* ***************************
+headding
+*************************** */
+/* h1 */
+h1 {
+
+  @include fs($h1_fontSize, $h1_lineHeight);
+
+  @include sp {
+    @include fs(23px, 30px);
+  }
+
+  font-weight: bold;
+
+}
+
+/* h2 */
+h2 {
+  margin-bottom: $h2_marginBottom;
+  @include fs($h2_fontSize, $h2_lineHeight);
+
+  @include sp {
+    @include fs(21px, 28px);
+  }
+
+  font-weight: bold;
+}
+
+/* h3 */
+h3 {
+  margin-bottom: $h3_marginBottom;
+  @include fs($h3_fontSize, $h3_lineHeight);
+  font-weight: bold;
+
+  @include sp {
+    @include fs(18px, 18px*1.5);
+  }
+
+}
+
+/* h4 */
+h4 {
+  margin-bottom: $h4_marginBottom;
+  @include fs($h4_fontSize, $h4_lineHeight);
+  font-weight: bold;
+
+  @include sp {
+    @include fs(16px, 16px*1.5);
+  }
+
+}
+
+/* h5 */
+h5 {
+  margin-bottom: $h5_marginBottom;
+  @include fs($h5_fontSize, $h5_lineHeight);
+  font-weight: bold;
+
+  @include sp {
+    @include fs(14px, 14px*1.5);
+  }
+
+}

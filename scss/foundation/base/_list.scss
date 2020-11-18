@@ -1,0 +1,132 @@
+/* ***************************
+list
+*************************** */
+/*
+ul, ol
+--------------------------- */
+*+ul {
+  margin-top: 14px;
+}
+
+h2+ul,
+h3+ul,
+h4+ul {
+  margin-top: 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 15px;
+}
+
+ul li ul,
+ul li ol,
+ul li+li {
+  margin-top: 7px;
+}
+
+ul li:before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 0;
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #292929;
+  border-radius: 50%;
+}
+
+ul li ul li:before {
+  background: #999999;
+}
+
+*+ol {
+  margin-top: 14px;
+}
+
+h2+ol,
+h3+ol,
+h4+ol {
+  margin-top: 0;
+}
+
+ol {
+  counter-reset: count-number;
+}
+
+ol li {
+  position: relative;
+  padding-left: 1.8em;
+  counter-increment: count-number;
+}
+
+ol li ul,
+ol li ol,
+ol li+li {
+  margin-top: 7px;
+}
+
+ol li:before {
+  content: counter(count-number) ".";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  background: none;
+}
+
+ol li ol {
+  counter-reset: cnt;
+}
+
+ol li ol li {
+  padding-left: 2em;
+  counter-increment: cnt;
+}
+
+ol li ol li:before {
+  left: -8px;
+  content: "（"counter(cnt) "）";
+}
+
+ol ol,
+ol ul {
+  counter-reset: count-number;
+}
+
+ol ul li {
+  position: relative;
+  padding-left: 15px;
+}
+
+ol ul li ul,
+ol ul li ol,
+ol ul li+li {
+  margin-top: 7px;
+}
+
+ol ul li:before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 0;
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #666666;
+  border-radius: 50%;
+}
+
+/*
+dl
+--------------------------- */
+dl {
+  margin-bottom: 0;
+}
+
+dt,
+dd {
+  margin-bottom: 0;
+}

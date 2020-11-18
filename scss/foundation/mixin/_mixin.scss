@@ -1,0 +1,67 @@
+@charset "UTF-8";
+// *****************************************************
+// mixin
+// *****************************************************
+
+// new font-size
+// -----------------------------------
+@mixin fs_rem($fs) {
+  font-size: ($fs / 16)+rem;
+}
+
+// font-size, line-height
+// -----------------------------------
+@mixin fs($fs, $lh, $init:$baseFontSize) {
+  $per: ceil($lh / $fs * 100);
+  font-size: percentage($fs / $init);
+  line-height: $per+0%;
+}
+
+@mixin fs_sp($fs, $lh, $init:$baseFontSize_sp) {
+  $per: ceil($lh / $fs * 100);
+  font-size: percentage($fs / $init);
+  line-height: $per+0%;
+}
+
+@mixin fs_px($fs, $lh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+// Media Queries
+// -----------------------------------
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+// centering
+// -----------------------------------
+@mixin centeringAbs() {
+  position: absolute;
+  top: -100%;
+  right: -100%;
+  bottom: -100%;
+  left: -100%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  margin: auto;
+}
+
+// 上下左右中央配置
+// -----------------------------------
+@mixin center {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

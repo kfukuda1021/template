@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+// ==============================
+// width
+// ==============================
+
+//breakpoint
+$sp: 767px;
+$pc: 1000px;
+
+$kv_width: 1000px;
+$cont_width: 1000px;
+
+// ==============================
+// font
+// ==============================
+
+// font family
+$font_family: -apple-system,
+BlinkMacSystemFont,
+"Helvetica Neue",
+"Segoe UI",
+"ヒラギノ角ゴ ProN W3",
+Hiragino Kaku Gothic ProN,
+"メイリオ",
+Meiryo,
+sans-serif;
+
+$font_family_min: 'Judson',
+"ヒラギノ明朝 ProN W3",
+"Hiragino Mincho ProN",
+"游明朝 Regular",
+"Yu Mincho",
+"HG明朝E",
+"ＭＳ Ｐ明朝",
+"MS PMincho",
+"ＭＳ 明朝",
+serif;
+
+$font_family_min_ie: 'Judson',
+"ＭＳ Ｐ明朝",
+"MS PMincho",
+"ＭＳ 明朝",
+serif;
+
+$font_family_en: -apple-system,
+BlinkMacSystemFont,
+"Helvetica Neue",
+"Segoe UI",
+sans-serif;
+
+$webfont_family: 'Lato',
+'Noto Sans Japanese',
+'ヒラギノ角ゴ Pro',
+'Hiragino Kaku Gothic Pro',
+'メイリオ',
+'Meiryo',
+sans-serif;
+
+
+// font size
+$baseFontSize: 14px;
+$baseLineHeight: 26px;
+
+// font size S
+$baseFontSize_s: 12px;
+$baseLineHeight_s: 24px;
+
+// font size L
+$baseFontSize_l: 16px;
+$baseLineHeight_l: 28px;
+
+// font size sp
+$baseFontSize_sp: 14px;
+$baseLineHeight_sp: 24px;
+
+
+// h1
+$h1_fontSize: 33px;
+$h1_lineHeight: 44px;
+$h1_marginBottom: 20px;
+
+// h2
+$h2_fontSize: 26px;
+$h2_lineHeight: 30px;
+$h2_marginTop: 60px;
+$h2_marginBottom: 25px;
+
+// h3
+$h3_fontSize: 16px;
+$h3_lineHeight: 20px;
+$h3_marginTop: 21px;
+$h3_marginBottom: 5px;
+
+// h4
+$h4_fontSize: 14px;
+$h4_lineHeight: 18px;
+$h4_marginTop: 23px;
+$h4_marginBottom: 12px;
+
+// h5
+$h5_fontSize: 14px;
+$h5_lineHeight: 18px;
+$h5_marginTop: 23px;
+$h5_marginBottom: 10px;
+
+// breadcrumb
+$pnavi_fontSize: 13px;
+$pnavi_lineHeight: 21px;
+
+
+// ==============================
+// color
+// ==============================
+
+// メインカラー
+$main_color: #f39800;
+
+// グラデーション
+$grad_color: linear-gradient(to left, #f39800, #fcc15e);
+$grad_color2: linear-gradient(99deg, #f39800, #e83428);
+
+// テキストカラー
+$text_color: #222;
+$link_color: #104dbc;
+$visited_color: #800080;
+$hover_color: #3e74d8;
+
+// ボーダー
+$border_color: #e8e8e8;
+$border_radius: 10px;
+
+// ボックスシャドウ
+$box_shadow: 0 3px 40px 0 rgba(0, 0, 0, 0.1);

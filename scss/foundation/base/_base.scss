@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* ***************************
+html, body
+*************************** */
+html {
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  background: #fff;
+  vertical-align: baseline;
+  font-weight: normal;
+  font-family: $font_family;
+  font-size: percentage($baseFontSize / 16px);
+  line-height: ceil($baseLineHeight / $baseFontSize * 100)+0%;
+  text-size-adjust: 100%;
+  color: $text_color;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+  @include sp {
+    min-width: 320px;
+  }
+
+}
+
+.l-base {
+  margin: 0;
+  padding: 0;
+}
+
+/* ***************************
+word break
+*************************** */
+.wb-ba {
+  word-break: break-all;
+}
+
+.wb-bw {
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+/* ***************************
+a
+*************************** */
+a {
+  color: $link_color;
+  text-decoration: underline;
+
+  &:visited {
+    color: $visited_color;
+  }
+
+  &:hover {
+    color: $hover_color;
+
+    &:before {
+      text-decoration: none;
+    }
+  }
+
+}
+
+/* ***************************
+img
+*************************** */
+img {
+  font-size: 0%;
+  line-height: 0;
+  vertical-align: top;
+
+  @include sp {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+/* ***************************
+mark, caution
+*************************** */
+strong,
+b {
+  font-weight: bold;
+}
+
+em {
+  color: #d85e29;
+}
+
+mark {
+  color: #ff0000;
+}
